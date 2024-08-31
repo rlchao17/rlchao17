@@ -16,6 +16,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           hostname
-          cat /etc/os-release
-          apt list --installed
+          lscpu
+          free
       - run: echo "🍏 This job's status is ${{ job.status }}."
