@@ -15,5 +15,5 @@ jobs:
       - name: Run some commands on runner vm
         run: |
           # ls ${{ github.workspace }}
-          ansible --version
+          systemctl status postgresql.service || true
       - run: echo "🍏 This job's status is ${{ job.status }}."
